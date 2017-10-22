@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12px;
+}
+
+img {
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+.banner {
+  margin: 100px auto;
+  border: 5px solid #000;
+  width: 520px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner .img {
+  width: 4680px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.banner .img li {
+  float: left;
+}
+
+.banner .num {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  left: 0;
+  text-align: center;
+  font-size: 0;
+}
+
+.banner .num li {
+  width: 10px;
+  height: 10px;
+  background: #888;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.banner .num li.on {
+  background: #f60;
+}
+
+.banner .btn {
+  width: 40px;
+  height: 80px;
+  line-height: 50px;
+  /*background: rgba(0, 0, 0, 0.5);*/
+  background: url(../images/btn.png) no-repeat;
+  opacity: .6;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  font-size: 40px;
+  font-family: "宋体";
+  display: none;
+}
+
+.banner:hover .btn {
+  display: block;
+}
+
+.banner .btn_l {
+  left: 0;
+  background-position: -72px 0;
+}
+
+.banner .btn_r {
+  right: 0;
+  background-position: 6px 0;
+}
